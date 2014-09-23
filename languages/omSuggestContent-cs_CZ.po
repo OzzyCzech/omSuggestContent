@@ -1,0 +1,267 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: omRealEstate\n"
+"POT-Creation-Date: 2014-09-22 10:38+0100\n"
+"PO-Revision-Date: 2014-09-22 10:38+0100\n"
+"Last-Translator: Roman Ožana <ozana@omdesign.cz>\n"
+"Language-Team:  <ozana@omdesign.cz>\n"
+"Language: cs_CZ\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.9\n"
+"X-Poedit-KeywordsList: __;_e;_x\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../omSuggestContent.php:45
+msgid "send-tip"
+msgstr "poslat-tip"
+
+#: ../omSuggestContent.php:52
+msgid "Tips"
+msgstr "Tipy"
+
+#: ../omSuggestContent.php:53 ../omSuggestContent.php:79
+msgid "Tip"
+msgstr "Tip"
+
+#: ../omSuggestContent.php:54
+msgid "Send tip"
+msgstr "Poslat tip"
+
+#: ../omSuggestContent.php:55
+msgid "Send new tip"
+msgstr "Poslat nový tip"
+
+#: ../omSuggestContent.php:80
+msgid "From"
+msgstr "Zaslal"
+
+#: ../omSuggestContent.php:81
+msgid "Date"
+msgstr "Datum"
+
+#: ../omSuggestContent.php:98
+msgid "Delete tip"
+msgstr "Odstranit tip"
+
+#: ../omSuggestContent.php:141
+msgid "Captcha input"
+msgstr "Captcha input"
+
+#: ../omSuggestContent.php:151
+msgid "Unable to submit this form, please refresh and try again."
+msgstr "Nelze odeslat tento formulář, prosím, aktualizujte a zkuste to znovu."
+
+#: ../omSuggestContent.php:161
+#, php-format
+msgid "Invalid captcha value. We expect \"%s\"."
+msgstr "Špatná captcha. Očekávali jsme \"%s\"."
+
+#: ../omSuggestContent.php:164
+msgid "Title is mandatory."
+msgstr "Titulek je opvinný."
+
+#: ../omSuggestContent.php:165
+msgid "Content is mandatory."
+msgstr "Popis je povinný."
+
+#: ../omSuggestContent.php:175
+msgid "Name is  mandatory."
+msgstr "Jméno je povinné."
+
+#: ../omSuggestContent.php:176
+msgid "Email is mandatory."
+msgstr "Email je povinný."
+
+#: ../omSuggestContent.php:233
+#, php-format
+msgid "%s: There is a new tip"
+msgstr "%s: Nový tip byl právě vložen"
+
+#: ../omSuggestContent.php:235
+msgid "Show tip"
+msgstr "Zobrazit tip"
+
+#: ../send-tip.php:7
+msgid "Send a tip"
+msgstr "Poslat tip"
+
+#: ../send-tip.php:12
+msgid "Thanks for your tip!"
+msgstr "Děkujeme za Váš tip."
+
+#: ../send-tip.php:22
+msgid "Tip title"
+msgstr "Titulek"
+
+#: ../send-tip.php:23 ../omSuggestContentEditor.phtml:4
+#: ../omSuggestContentEditor.phtml:7
+msgid "Title"
+msgstr "Titulek"
+
+#: ../send-tip.php:28 ../omSuggestContentEditor.phtml:13
+msgid "URL"
+msgstr "URL"
+
+#: ../send-tip.php:30 ../omSuggestContentEditor.phtml:16
+msgid "http://www.example.com"
+msgstr "http://www.example.com"
+
+#: ../send-tip.php:36
+msgid "Your name"
+msgstr "Tvoje jméno"
+
+#: ../send-tip.php:37 ../omSuggestContentEditor.phtml:45
+msgid "John Doe"
+msgstr "Jan Novák"
+
+#: ../send-tip.php:42
+msgid "Your email"
+msgstr "Tvůj email"
+
+#: ../send-tip.php:44 ../omSuggestContentEditor.phtml:55
+msgid "email@example.com"
+msgstr "email@example.com"
+
+#: ../send-tip.php:72
+msgid "Submit tip"
+msgstr "Poslat tip"
+
+#: ../omSuggestContentEditor.phtml:42
+msgid "Author name"
+msgstr "Jméno autora"
+
+#: ../omSuggestContentEditor.phtml:52
+msgid "Author email"
+msgstr "Email autora"
+
+#: ../omSuggestContentEditor.phtml:62
+msgid "Author IP"
+msgstr "IP autora"
+
+#~ msgid "^send-tip/?"
+#~ msgstr "^send-tip/?"
+
+#~ msgid "Not multisite ready :("
+#~ msgstr "Není připraveno na multisite :("
+
+#~ msgid "Social provider login error"
+#~ msgstr "Chyba přihlášení přes poskytovatele"
+
+#~ msgid "Ups! Missing data about response."
+#~ msgstr "Ups! Chybějící údaje o odpověď."
+
+#~ msgid "Invalid auth response "
+#~ msgstr "Chybná odpověď autentifikace "
+
+#~ msgid "An unknown error occurred, please try again later."
+#~ msgstr "Došlo k neznámé chybě, zkuste to prosím později."
+
+#~ msgid "Empty or corrupted response from selected provider."
+#~ msgstr "Vrátila se prázdná nebo poškozená odpověd od poskytovatele."
+
+#~ msgid "Social login options save"
+#~ msgstr "Social login nastavení bylo uloženo"
+
+#~ msgid ""
+#~ "Cannot log you in. There is no account on this site connected to that %s "
+#~ "user identity."
+#~ msgstr ""
+#~ "Přihlášení se nezdařilo. Na této stránce neexistuje žádný účet připojeno s"
+#~ "% s identitou uživatele."
+
+#~ msgid ""
+#~ "Account with email <strong>%s</strong> already exists, please try login "
+#~ "again."
+#~ msgstr ""
+#~ "Účet s emailem <strong>%s</strong> již existuje, prosím zkuste se "
+#~ "přihlásit znova."
+
+#~ msgid "Connected"
+#~ msgstr "Připojeno"
+
+#~ msgid "Enable"
+#~ msgstr "Povolit"
+
+#~ msgid "enable"
+#~ msgstr "povolit"
+
+#~ msgid "App ID"
+#~ msgstr "App ID"
+
+#~ msgid "App Secret"
+#~ msgstr "App Secret"
+
+#~ msgid "Register here:"
+#~ msgstr "Registorvat zde:"
+
+#~ msgid "Client ID"
+#~ msgstr "Client ID"
+
+#~ msgid "Client secret"
+#~ msgstr "Client secret"
+
+#~ msgid "Key"
+#~ msgstr "Key"
+
+#~ msgid "Secret"
+#~ msgstr "Secret"
+
+#~ msgid "Login"
+#~ msgstr "Přihlásit se"
+
+#~ msgid ""
+#~ "You do not have sufficient permissions to manage options for this site."
+#~ msgstr "Nemáte dostatečná oprávnění pro správu možnosti této stránky."
+
+#~ msgid "Social login settings"
+#~ msgstr "Nastavení social login"
+
+#~ msgid "Common settings"
+#~ msgstr "Společná nastavení"
+
+#~ msgid "Callback URL"
+#~ msgstr "Callback URL"
+
+#~ msgid "Some services (e.g. Twitter,Google) require callback URL."
+#~ msgstr "Některé služby (např. Twitter, Google) vyžadují callback URL."
+
+#~ msgid "Social connection"
+#~ msgstr "Propojení se sociálními sítěmi"
+
+#~ msgid "Connect your account with"
+#~ msgstr "Propojte svůj účet"
+
+#~ msgid "Connect with"
+#~ msgstr "Propojit s"
+
+#~ msgid "Conected with"
+#~ msgstr "Propojeno s"
+
+#~ msgid "Name"
+#~ msgstr "Jméno"
+
+#~ msgid "Nickname"
+#~ msgstr "Přezdívka"
+
+#~ msgid "Remove connection"
+#~ msgstr "Odebrat spojení"
+
+#~ msgid "Account creator"
+#~ msgstr "Účet vytvořil"
+
+#~ msgid "Connected with"
+#~ msgstr "Propojeno"
+
+#~ msgid "You are fully connected, like octopus with all networks"
+#~ msgstr "Jste propojen se všemi sítěmi, které podporujeme"
+
+#~ msgid "Social login"
+#~ msgstr "Social Login"
+
+#~ msgid "Remove"
+#~ msgstr "Odebrat"

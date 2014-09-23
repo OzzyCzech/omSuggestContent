@@ -1,0 +1,72 @@
+<table class="form-table">
+	<tbody>
+	<tr>
+		<th scope="row"><label for="post_title"><? _e('Title', OSC) ?></label></th>
+		<td>
+			<input type="text" style="width: 100%" value="<?= esc_attr($post->post_title) ?>"
+			       placeholder="<? esc_attr(_e('Title', OSC)) ?>"
+			       name="post_title" id="post_title" required="required"/>
+		</td>
+	</tr>
+
+	<tr>
+		<th scope="row"><label for="tip-title"><? _e('URL', OSC) ?></label></th>
+		<td>
+			<input type="url" style="width: 100%" value="<?= esc_attr($post->tip_url) ?>"
+			       placeholder="<? esc_attr(_e('http://www.example.com', OSC)) ?>"
+			       name="url" id="tip-url"/>
+		</td>
+	</tr>
+
+	<tr>
+		<th></th>
+		<td>
+			<? wp_editor(
+				$post->post_content, 'content', [
+					'dfw' => false,
+					'teeny' => true,
+					'wpautop' => false,
+					'quicktags' => false,
+					'drag_drop_upload' => false,
+					'media_buttons' => false,
+					'editor_height' => 180,
+					'textarea_name' => 'content',
+					'editor_class' => 'large-text'
+				]
+			); ?>
+		</td>
+	</tr>
+
+
+	<tr>
+		<th scope="row"><label for="tip-name"><? _e('Author name', OSC) ?></label></th>
+		<td>
+			<input type="text" style="width: 100%" value="<?= esc_attr($post->tip_name ?: $name) ?>"
+			       placeholder="<? esc_attr(_e('John Doe', OSC)) ?>"
+			       name="tip_name" id="tip-name" required="required"/>
+		</td>
+	</tr>
+
+
+	<tr>
+		<th scope="row"><label for="tip-email"><? _e('Author email', OSC) ?></label></th>
+		<td>
+			<input type="email" style="width: 100%" value="<?= esc_attr($post->tip_email ?: $email) ?>"
+			       placeholder="<? esc_attr(_e('email@example.com', OSC)) ?>"
+			       name="tip_email" id="tip-email" required="required"/>
+		</td>
+	</tr>
+
+	<? if ($post->tip_ip) { ?>
+		<tr>
+			<th scope="row"><label><? _e('Author IP', OSC) ?></label></th>
+			<td>
+				<?= esc_html($post->tip_ip) ?>
+			</td>
+		</tr>
+	<? } ?>
+
+	</tbody>
+</table>
+
+
