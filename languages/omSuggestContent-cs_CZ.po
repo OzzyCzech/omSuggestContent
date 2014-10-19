@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: omRealEstate\n"
-"POT-Creation-Date: 2014-09-22 10:38+0100\n"
-"PO-Revision-Date: 2014-09-22 10:38+0100\n"
+"POT-Creation-Date: 2014-10-19 13:18+0100\n"
+"PO-Revision-Date: 2014-10-19 13:18+0100\n"
 "Last-Translator: Roman Ožana <ozana@omdesign.cz>\n"
 "Language-Team:  <ozana@omdesign.cz>\n"
 "Language: cs_CZ\n"
@@ -10,138 +10,182 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.6.9\n"
-"X-Poedit-KeywordsList: __;_e;_x\n"
+"X-Poedit-KeywordsList: __;_e;_x;esc_html__;esc_html_e;esc_attr__;esc_attr_e\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../omSuggestContent.php:45
-msgid "send-tip"
-msgstr "poslat-tip"
+#: ../omSuggestContent.php:54 ../omSuggestContent.php:56
+#: ../omSuggestContent.php:58
+msgid "News"
+msgstr "Novinky"
 
-#: ../omSuggestContent.php:52
-msgid "Tips"
-msgstr "Tipy"
+#: ../omSuggestContent.php:59
+msgid "Send news"
+msgstr "Poslat novinku"
 
-#: ../omSuggestContent.php:53 ../omSuggestContent.php:79
-msgid "Tip"
-msgstr "Tip"
+#: ../omSuggestContent.php:60
+msgid "Send new news"
+msgstr "Poslat novinku"
 
-#: ../omSuggestContent.php:54
-msgid "Send tip"
-msgstr "Poslat tip"
+#: ../omSuggestContent.php:84
+msgid "News content"
+msgstr "Obsah novinky"
 
-#: ../omSuggestContent.php:55
-msgid "Send new tip"
-msgstr "Poslat nový tip"
-
-#: ../omSuggestContent.php:80
+#: ../omSuggestContent.php:85
 msgid "From"
 msgstr "Zaslal"
 
-#: ../omSuggestContent.php:81
+#: ../omSuggestContent.php:86
 msgid "Date"
 msgstr "Datum"
 
-#: ../omSuggestContent.php:98
-msgid "Delete tip"
-msgstr "Odstranit tip"
+#: ../omSuggestContent.php:100
+msgid "Delete news"
+msgstr "Smazat novinku"
 
-#: ../omSuggestContent.php:141
+#: ../omSuggestContent.php:121 ../send-news.php:7
+msgid "Suggest news"
+msgstr "Poslat zprávičku"
+
+#: ../omSuggestContent.php:146
 msgid "Captcha input"
 msgstr "Captcha input"
 
-#: ../omSuggestContent.php:151
+#: ../omSuggestContent.php:156
 msgid "Unable to submit this form, please refresh and try again."
 msgstr "Nelze odeslat tento formulář, prosím, aktualizujte a zkuste to znovu."
 
-#: ../omSuggestContent.php:161
+#: ../omSuggestContent.php:159
+msgid "Login is required, please login first."
+msgstr "Přihlášení je vyžadováno, nejprve se přihlašte."
+
+#: ../omSuggestContent.php:167
 #, php-format
 msgid "Invalid captcha value. We expect \"%s\"."
 msgstr "Špatná captcha. Očekávali jsme \"%s\"."
 
-#: ../omSuggestContent.php:164
+#: ../omSuggestContent.php:170
 msgid "Title is mandatory."
 msgstr "Titulek je opvinný."
 
-#: ../omSuggestContent.php:165
+#: ../omSuggestContent.php:171
 msgid "Content is mandatory."
 msgstr "Popis je povinný."
 
-#: ../omSuggestContent.php:175
-msgid "Name is  mandatory."
-msgstr "Jméno je povinné."
-
-#: ../omSuggestContent.php:176
-msgid "Email is mandatory."
-msgstr "Email je povinný."
-
-#: ../omSuggestContent.php:233
+#: ../omSuggestContent.php:200
 #, php-format
-msgid "%s: There is a new tip"
-msgstr "%s: Nový tip byl právě vložen"
+msgid "%s: There is a new news"
+msgstr "%s: novinka byla vytvořena"
 
-#: ../omSuggestContent.php:235
-msgid "Show tip"
-msgstr "Zobrazit tip"
+#: ../omSuggestContent.php:202
+msgid "Show news"
+msgstr "Zobrazit zprávičky"
 
-#: ../send-tip.php:7
-msgid "Send a tip"
-msgstr "Poslat tip"
+#: ../omSuggestContent.php:220 ../omSuggestContentSubmitbox.phtml:34
+#: ../omSuggestContentSubmitbox.phtml:36
+msgid "Publish"
+msgstr "Publikovat"
 
-#: ../send-tip.php:12
-msgid "Thanks for your tip!"
-msgstr "Děkujeme za Váš tip."
+#: ../send-news.php:12
+msgid "Thanks for your news!"
+msgstr "Děkujeme za Váši Zprávičku."
 
-#: ../send-tip.php:22
+#: ../send-news.php:24
 msgid "Tip title"
 msgstr "Titulek"
 
-#: ../send-tip.php:23 ../omSuggestContentEditor.phtml:4
+#: ../send-news.php:25 ../omSuggestContentEditor.phtml:4
 #: ../omSuggestContentEditor.phtml:7
 msgid "Title"
 msgstr "Titulek"
 
-#: ../send-tip.php:28 ../omSuggestContentEditor.phtml:13
-msgid "URL"
-msgstr "URL"
-
-#: ../send-tip.php:30 ../omSuggestContentEditor.phtml:16
-msgid "http://www.example.com"
-msgstr "http://www.example.com"
-
-#: ../send-tip.php:36
+#: ../send-news.php:31
 msgid "Your name"
 msgstr "Tvoje jméno"
 
-#: ../send-tip.php:37 ../omSuggestContentEditor.phtml:45
+#: ../send-news.php:32
 msgid "John Doe"
 msgstr "Jan Novák"
 
-#: ../send-tip.php:42
+#: ../send-news.php:37
 msgid "Your email"
 msgstr "Tvůj email"
 
-#: ../send-tip.php:44 ../omSuggestContentEditor.phtml:55
+#: ../send-news.php:39
 msgid "email@example.com"
 msgstr "email@example.com"
 
-#: ../send-tip.php:72
-msgid "Submit tip"
-msgstr "Poslat tip"
+#: ../send-news.php:67
+msgid "Submit news"
+msgstr "Odeslat zprávičku"
 
-#: ../omSuggestContentEditor.phtml:42
-msgid "Author name"
-msgstr "Jméno autora"
+#: ../omSuggestContentSubmitbox.phtml:5
+msgid "Move to"
+msgstr "Posunout do"
 
-#: ../omSuggestContentEditor.phtml:52
-msgid "Author email"
-msgstr "Email autora"
+#: ../omSuggestContentSubmitbox.phtml:14
+msgid "Delete Permanently"
+msgstr "Odstranit"
 
-#: ../omSuggestContentEditor.phtml:62
-msgid "Author IP"
-msgstr "IP autora"
+#: ../omSuggestContentSubmitbox.phtml:16
+msgid "Move to Trash"
+msgstr "Přesunout do koše"
+
+#: ../omSuggestContentSubmitbox.phtml:29 ../omSuggestContentSubmitbox.phtml:31
+msgid "Schedule"
+msgstr "Naplánovat"
+
+#: ../omSuggestContentSubmitbox.phtml:41 ../omSuggestContentSubmitbox.phtml:43
+msgid "Submit for Review"
+msgstr "Odeslat ke schválení"
+
+#: ../omSuggestContentSubmitbox.phtml:49 ../omSuggestContentSubmitbox.phtml:51
+msgid "Update"
+msgstr "Aktualizovat"
+
+#~ msgid "Edit as %s"
+#~ msgstr "Upravit jako %s"
+
+#~ msgid "Author name"
+#~ msgstr "Jméno autora"
+
+#~ msgid "Author email"
+#~ msgstr "Email autora"
+
+#~ msgid "Author IP"
+#~ msgstr "IP autora"
+
+#~ msgid "send-tip"
+#~ msgstr "zpravicky/new"
+
+#~ msgid "Tips"
+#~ msgstr "Tipy"
+
+#~ msgid "Tip"
+#~ msgstr "Tip"
+
+#~ msgid "Send tip"
+#~ msgstr "Poslat tip"
+
+#~ msgid "Name is  mandatory."
+#~ msgstr "Jméno je povinné."
+
+#~ msgid "Email is mandatory."
+#~ msgstr "Email je povinný."
+
+#~ msgid "Show tip"
+#~ msgstr "Zobrazit tip"
+
+#~ msgid "Send a tip"
+#~ msgstr "Poslat tip"
+
+#~ msgid "URL"
+#~ msgstr "URL"
+
+#~ msgid "http://www.example.com"
+#~ msgstr "http://www.example.com"
 
 #~ msgid "^send-tip/?"
 #~ msgstr "^send-tip/?"
