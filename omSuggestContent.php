@@ -12,6 +12,8 @@ namespace om\suggest;
  * @author Roman Ožana <ozana@omdesign.cz>
  */
 
+use Tracy\Debugger;
+
 if (!class_exists('WP')) {
 	header('Status: 403 Forbidden');
 	header('HTTP/1.1 403 Forbidden');
@@ -107,15 +109,20 @@ class omSuggestContent {
 		}
 	}
 
+	/**
+	 * @see http://mihaivalentin.com/wordpress-tutorial-load-the-template-you-want-with-template_redirect/
+	 */
 	public function template_redirect() {
 		global $wp_query;
 		/** @var \WP_Query $wp_query */
 
-		if (is_404() && is_user_logged_in() && get_query_var('pagename') === $this->url) {
+		if (is_404() && get_query_var('pagename') === $this->url) {
 			$wp_query->is_page = true;
 			$wp_query->is_404 = false;
 			$wp_query->is_home = false;
+			header("HTTP/1.1 200 OK");
 
+			if (!is_user_logged_in()) auth_redirect();
 			add_filter(
 				'wp_title', function () {
 					return __('Suggest news', OSC);
@@ -167,8 +174,8 @@ class omSuggestContent {
 			throw new \Exception(sprintf(__('Invalid captcha value. We expect "%s".', OSC), static::$captcha));
 		}
 
-		if (!$title) throw new \Exception(_e('Title is mandatory.', OSC));
-		if (!$content) throw new \Exception(_e('Content is mandatory.', OSC));
+		if (!$title) throw new \Exception(__('Title is mandatory.', OSC));
+		if (!$content) throw new \Exception(__('Content is mandatory.', OSC));
 
 		$post = [
 			'post_title' => $title,
