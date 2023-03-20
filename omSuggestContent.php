@@ -3,13 +3,13 @@ namespace om\suggest;
 
 /**
  * Plugin Name: omSuggestContent
- * Plugin URI: http://www.omdesign.cz
+ * Plugin URI: https://ozana.cz
  * Description: Suggest content by users from public page
  * Version: 1.0
  * Author: Roman Ožana
- * Author URI: http://www.omdesign.cz/kontakt
+ * Author URI: https://ozana.cz/kontakt
  *
- * @author Roman Ožana <ozana@omdesign.cz>
+ * @author Roman Ožana <roman@ozana.cz>
  */
 
 use Tracy\Debugger;
